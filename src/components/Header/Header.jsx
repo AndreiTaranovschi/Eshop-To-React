@@ -3,7 +3,7 @@ import styles from './header.module.scss';
 
 function Header() {
 	return (
-		<div className={styles.header}>Header</div>
+		<div className={`${styles.header} gridContainer`}>Header</div>
 	);
 }
 

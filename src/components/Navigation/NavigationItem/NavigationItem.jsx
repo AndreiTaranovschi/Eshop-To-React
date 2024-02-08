@@ -1,9 +1,10 @@
 import React from 'react';
 import styles from './navigation-item.module.scss';
+import {NavLink} from "react-router-dom";
 
-function NavigationItem({name}) {
+function NavigationItem({ title, link }) {
 	return (
-		<div className={styles.navItem}>NavigationItem {name}</div>
+		<NavLink className={styles.navItem} to={link} >{title}</NavLink>
 	);
 }
 

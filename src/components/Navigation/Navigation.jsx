@@ -3,27 +3,77 @@ import NavigationItem from "./NavigationItem/NavigationItem";
 import styles from './navigation.module.scss'
 
 function Navigation() {
-	const arrayOfNavi = [
+	const categories = [
 		{
-			name: 'nav-1',
+			link: 'offers',
+			title: 'Предложения',
 		},
 		{
-			name: 'nav-2',
+			link: 'phones',
+			title: 'Телефоны',
+			childrens: [
+				{
+					link: 'all-phones',
+					title: 'Все телефоны',
+				},
+				{
+					link: 'the-newest-phones',
+					title: 'Все телефоны',
+				},
+				{
+					link: 'samsung-galaxy-s-24',
+					title: 'Samsung Galaxy S24',
+				},
+				{
+					link: 'iphone-15',
+					title: 'iPhone 15',
+				},
+				{
+					link: 'samsung-galaxy-s-23',
+					title: 'Samsung Galaxy S23',
+				},
+				{
+					link: 'smartphone-e-sim',
+					title: 'Смартфон eSIM',
+				},
+				{
+					link: 'restored-phones',
+					title: 'Восстановленные телефоны',
+				},
+			]
 		},
 		{
-			name: 'nav-3',
+			link: 'tvs',
+			title: 'Телевизоры',
 		},
 		{
-			name: 'nav-4',
+			link: 'tablets',
+			title: 'Планшеты',
 		},
 		{
-			name: 'nav-5',
+			link: 'laptops',
+			title: 'Ноутбуки',
+		},
+		{
+			link: 'modems',
+			title: 'Модемы',
+		},
+		{
+			link: 'gadgets',
+			title: 'Гаджеты',
+		},
+		{
+			link: 'accessories',
+			title: 'Аксессуары',
 		},
 	]
-	console.log('arrayOfNavi', arrayOfNavi);
 	return (
 		<>
-			<div className={styles.navWrapper}>{arrayOfNavi.map((navItem) => NavigationItem(navItem))}</div>
+			<div className={styles.navWrapper}>
+				{categories.map((category) => (
+					<NavigationItem key={category.link} title={category.title} link={category.link} />
+				))}
+			</div>
 		</>
 	);
 }
