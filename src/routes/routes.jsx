@@ -3,7 +3,7 @@ import React, {
   Suspense,
 } from 'react';
 import { Routes, Route } from 'react-router-dom';
-import { Layout } from '../components/Layout/Layout.tsx';
+import { Layout } from '../components/Layout/Layout.jsx';
 
 const MainPage = lazy(() => import('../pages/MainPage/MainPage'));
 const TestPage = lazy(() => import('../pages/TestPage/TestPage'));
