@@ -5,65 +5,65 @@ import styles from './navigation.module.scss'
 function Navigation() {
 	const categories = [
 		{
-			link: 'offers',
+			link: '/',
 			title: 'Предложения',
 		},
 		{
-			link: 'phones',
+			link: '/catalog/phones',
 			title: 'Телефоны',
 			childrens: [
 				{
-					link: 'all-phones',
+					link: '/catalog/all-phones',
 					title: 'Все телефоны',
 				},
 				{
-					link: 'the-newest-phones',
+					link: '/catalog/the-newest-phones',
 					title: 'Все телефоны',
 				},
 				{
-					link: 'samsung-galaxy-s-24',
+					link: '/catalog/samsung-galaxy-s-24',
 					title: 'Samsung Galaxy S24',
 				},
 				{
-					link: 'iphone-15',
+					link: '/catalog/iphone-15',
 					title: 'iPhone 15',
 				},
 				{
-					link: 'samsung-galaxy-s-23',
+					link: '/catalog/samsung-galaxy-s-23',
 					title: 'Samsung Galaxy S23',
 				},
 				{
-					link: 'smartphone-e-sim',
+					link: '/catalog/smartphone-e-sim',
 					title: 'Смартфон eSIM',
 				},
 				{
-					link: 'restored-phones',
+					link: '/catalog/restored-phones',
 					title: 'Восстановленные телефоны',
 				},
 			]
 		},
 		{
-			link: 'tvs',
+			link: '/catalog/tvs',
 			title: 'Телевизоры',
 		},
 		{
-			link: 'tablets',
+			link: '/catalog/tablets',
 			title: 'Планшеты',
 		},
 		{
-			link: 'laptops',
+			link: '/catalog/laptops',
 			title: 'Ноутбуки',
 		},
 		{
-			link: 'modems',
+			link: '/catalog/modems',
 			title: 'Модемы',
 		},
 		{
-			link: 'gadgets',
+			link: '/catalog/gadgets',
 			title: 'Гаджеты',
 		},
 		{
-			link: 'accessories',
+			link: '/catalog/accessories',
 			title: 'Аксессуары',
 		},
 	]

@@ -6,7 +6,7 @@ import { Routes, Route } from 'react-router-dom';
 import { Layout } from '../components/Layout/Layout.jsx';
 
 const MainPage = lazy(() => import('../pages/MainPage/MainPage'));
-const TestPage = lazy(() => import('../pages/TestPage/TestPage'));
+const TestPage = lazy(() => import('../pages/TestPage/GrillPage'));
 
 function MainRoutes() {
   return (
@@ -22,18 +22,8 @@ function MainRoutes() {
             )
           }
         />
-				<Route
-          path="test"
-          element={
-            (
-              <Suspense fallback={<div>...loading</div>}>
-                <TestPage />
-              </Suspense>
-            )
-          }
-        />
         <Route
-          path="tvs"
+          path="catalog/:catalog"
           element={
             (
               <Suspense fallback={<div>...loading</div>}>
