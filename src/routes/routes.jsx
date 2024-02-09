@@ -32,6 +32,16 @@ function MainRoutes() {
             )
           }
         />
+        <Route
+          path="tvs"
+          element={
+            (
+              <Suspense fallback={<div>...loading</div>}>
+                <TestPage />
+              </Suspense>
+            )
+          }
+        />
       </Route>
     </Routes>
   )

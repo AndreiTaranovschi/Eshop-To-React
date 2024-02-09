@@ -5,7 +5,7 @@ import styles from './main-page.module.scss';
 const MainPage = () => {
   return (
     <div className={`${styles['main-page-class-name']} gridContainer`}>
-      <Navigation />
+      Main page
     </div>
   )
 }

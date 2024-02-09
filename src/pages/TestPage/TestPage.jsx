@@ -2,7 +2,7 @@ import React from 'react';
 
 function TestPage() {
 	return (
-		<div>
+		<div style={{height: '100%'}}>
 			Test Page
 		</div>
 	);
